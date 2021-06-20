@@ -10,6 +10,14 @@ Dare to Dazzle is an application where we will showcase jewellery. The user can 
 
 <hr>
 
+## UI Design
+
+The UI Design of this application is made keeping the Material Design Guidelines in mind.
+It also is responsive for 5-7 inch devices in addition to landscape mode.
+Animation like the Splash screen animation and transition effects between activities are used to make the app look more professional and enrich the UX.
+
+<hr>
+
 ## Usage
 
 The user would be greeted with a splash screen similar to Fig 1.
