@@ -1,2 +1,2 @@
-# project-2-team-33
-project-2-team-33 created by GitHub Classroom
+# Dare to Dazzle
+Dare to Dazzle is an application where we will showcase jewellery. The user can choose from four provided categories of jewellery; “Rings, Earrings, Necklaces and Bracelets”. Each category redirects the user to a list of items of the specific type. The user can choose one of the listed jewellery items and get more information regarding the particular item. Moreover, the user can search up the desired term to get more information about it. 
