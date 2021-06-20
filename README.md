@@ -1,10 +1,16 @@
 # Dare to Dazzle - Android App (Team 33)
-Dare to Dazzle is an application where we will showcase jewellery. The user can choose from four provided categories of jewellery; “Rings, Earrings, Necklaces and Bracelets”. Each category redirects the user to a list of items of the specific type. The user can choose one of the listed jewellery items and get more information regarding the particular item. Moreover, the user can search up the desired term to get more information about it. 
+
 
 <p align="center">
   <img src="" alt="Team Logo"
 	title="Logo" width="100" height="100" />
 </p>
+
+Dare to Dazzle is an application where we will showcase jewellery. The user can choose from four provided categories of jewellery; “Rings, Earrings, Necklaces and Bracelets”. Each category redirects the user to a list of items of the specific type. The user can choose one of the listed jewellery items and get more information regarding the particular item. Moreover, the user can search up the desired term to get more information about it. 
+
+<hr>
+
+## Usage
 
 The user would be greeted with a splash screen similar to Fig 1.
 
