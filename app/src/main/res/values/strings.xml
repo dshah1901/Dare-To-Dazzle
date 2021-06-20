@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dare to Dazzle</string>
+    <string name="we_make_you_sparkle">WE MAKE YOU SPARKLE</string>
+    <string name="top_items">TOP ITEMS</string>
+    <string name="select_categories">CATEGORIES</string>
+    <string name="dare_to_dazzle"></string>
+    <string name="devs">DEVELOPED BY DHVANI AND POOJA </string>
+    <string name="bracelets">Bracelets</string>
+    <string name="necklaces">Necklaces</string>
+    <string name="earrings">Earrings</string>
+    <string name="rings">Rings</string>
+    <string name="image">image</string>
+    <string name="search_hint">Search Jewellery</string>
+    <string name="got_something_in_mind">Got something in mind?</string>
+</resources>

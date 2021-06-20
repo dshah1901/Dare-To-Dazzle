@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/sacramento"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:textSize="64sp" />
+
+                <TextView
+                    android:id="@+id/slogan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/open_sans"
+
+                    android:text="@string/we_make_you_sparkle"
+                    android:textColor="#685F5F"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/search_View_rel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/slogan"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@layout/relativelayout_custom"
+                android:elevation="1dp"
+                tools:ignore="NotSibling,UnknownId">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="60dp"
+                    android:fontFamily="@font/open_sans"
+                    android:includeFontPadding="true"
+                    android:text="@string/got_something_in_mind"
+                    android:textColor="#9E9B9B" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/search_icon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@layout/relativelayout_custom"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/top_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/alice"
+                    android:text="@string/top_items"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/top_items_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:layout_below="@id/top_items" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@layout/relativelayout_primary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/select_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/alice"
+                    android:text="@string/select_categories"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="22sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ring_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="12dp"
+                    app:cardBackgroundColor="@color/secondary"
+                    app:cardCornerRadius="20dp"
+                    app:cardMaxElevation="20dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="140dp"
+                        android:contentDescription="@string/rings"
+                        android:padding="5dp"
+                        android:src="@drawable/r"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="50dp"
+                        android:layout_toEndOf="@+id/ring_img"
+                        android:fontFamily="@font/sacramento"
+                        android:text="@string/rings"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="35sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/earring_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="12dp"
+                    app:cardBackgroundColor="@color/secondary"
+                    app:cardCornerRadius="20dp"
+                    app:cardMaxElevation="20dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="140dp"
+                        android:contentDescription="@string/earrings"
+                        android:padding="5dp"
+                        android:src="@drawable/e"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="50dp"
+                        android:fontFamily="@font/sacramento"
+                        android:text="@string/earrings"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="35sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/necklace_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="12dp"
+                    app:cardBackgroundColor="@color/secondary"
+                    app:cardCornerRadius="20dp"
+                    app:cardMaxElevation="20dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="140dp"
+                        android:contentDescription="@string/necklaces"
+                        android:padding="5dp"
+                        android:src="@drawable/n"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="50dp"
+                        android:fontFamily="@font/sacramento"
+                        android:text="@string/necklaces"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="35sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bracelet_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="12dp"
+                    app:cardBackgroundColor="@color/secondary"
+                    app:cardCornerRadius="20dp"
+                    app:cardMaxElevation="20dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="140dp"
+                        android:contentDescription="@string/bracelets"
+                        android:padding="5dp"
+                        android:src="@drawable/b"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="50dp"
+                        android:fontFamily="@font/sacramento"
+                        android:text="@string/bracelets"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="35sp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
